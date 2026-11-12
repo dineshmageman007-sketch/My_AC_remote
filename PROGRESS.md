@@ -1,0 +1,11 @@
+# AC Remote - build progress
+- [x] IR protocol researched (IRremoteESP8266 ir_Samsung, 14/21-byte frames)
+- [x] tools/verify_encoder.py passes (ON/OFF frames match library reference)
+- [x] SamsungAc.kt encoder written (mirrors the verified Python)
+- [x] MainActivity.kt UI
+- [x] GitHub Actions workflow + README
+- [x] v1.0 delivered and confirmed working on AC (14-byte)
+- [x] Build fix 1: removed android-actions/setup-android step (sdkmanager 'tools' package gone; runner already has SDK)
+- [x] v1.1: AcStore/IrSender/SleepReceiver split out; 14-byte default (user confirmed it works on their AC)
+- [x] v1.1: sleep timer (AlarmManager.setAlarmClock -> SleepReceiver sends OFF x2), vector icon, committed debug.keystore for stable signing
+- [x] v1.1 zipped and delivered. Ideas not done: home-screen widget (user said skip)
